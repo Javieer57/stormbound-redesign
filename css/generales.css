@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+.centrado{
+    margin: auto;
+    max-width: 1000px;
+    overflow: hidden;
+    width: 90%;
+}
+
+img{
+    vertical-align: top;
+    width: 100%;
+}
+
+.centrado .contenedor_texto{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}

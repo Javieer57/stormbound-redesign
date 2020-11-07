@@ -1,16 +1,6 @@
-*{
-    box-sizing: border-box;
-}
 
-.centrado{
-    margin: auto;
-    max-width: 1000px;
-    overflow: hidden;
-    width: 90%;
-}
 
 /* Header */
-
 header .encabezado{
     background-image: url(../img/storm_bg.png);
     position: relative;
@@ -45,78 +35,30 @@ header .encabezado .centrado .personaje{
     max-width: 30%;
 }
 
-/* Sección Mazo */
 main{
     margin: 40px 0;
 }
 
-main .mazos{
+main section{
     margin-bottom: 40px;
 }
 
+/* Sección Mazo */
 main .mazos .centrado{
     display: flex;
     justify-content: space-between;
+    vertical-align: center;
 }
 
-main .mazos .centrado .contenedor_texto{
+main .mazos .centrado > *{
     width: 48%;
 }
 
 main .mazos .centrado .contenedor_imagen{
-    width: 48%;
-}
-
-main .mazos .centrado .contenedor_texto .encabezado .titulo{
-    color: #174277;
-    font-family: quicksand;    
-    font-weight: 700;
-    text-align: center;
-    font-size: 26px;
-    margin:0 0 5px;
-}
-
-main .mazos .centrado .contenedor_texto .encabezado img, 
-main .mazos .centrado .contenedor_imagen img{
-    width: 100%;
-    vertical-align: top;
-}
-
-main .mazos .centrado .contenedor_texto .texto{
-    font-family: Raleway;
-    font-size: 16px;
-    line-height: 30px;
-    font: 400;
-    /* padding: 0 10px; */
-    color:#818181
+    vertical-align: center;
 }
 
 /* Trailer */
-
-/* main .trailer .centrado .contenedor_texto{
-    width: 80%;
-    margin: auto;
-} */
-
-main .trailer .centrado .contenedor_texto{
-    width: 80%;
-    margin: 0 auto 20px;
-}
-
-main .trailer .centrado .contenedor_texto .encabezado .titulo{
-    color: #174277;
-    font-family: quicksand;    
-    font-weight: 700;
-    text-align: center;
-    font-size: 26px;
-    margin:0 0 5px;
-}
-
-main .trailer .centrado .contenedor_texto .encabezado img{
-    width: 100%;
-    vertical-align: top;
-}
-
 main .centrado .aplicacion .contenedor_video{
     margin: auto;
     margin-bottom: 20px;
@@ -159,24 +101,25 @@ main .trailer {
     margin-bottom: 60px;
 }
 
-main .tribus .centrado .contenedor_texto{
+main .tribus .centrado .contenedor_texto,
+main .newsletter .centrado .contenedor_texto{
     width: 80%;
     margin: 0 auto 20px;
 }
 
-main .tribus .centrado .encabezado .contenedor_texto  .titulo{
+/* main .tribus .centrado .encabezado .contenedor_texto  .titulo{
     color: #174277;
     font-family: quicksand;    
     font-weight: 700;
     text-align: center;
     font-size: 26px;
     margin:0 0 5px;
-}
+} */
 
-main .tribus .centrado .encabezado  .contenedor_texto img{
+/* main .tribus .centrado .encabezado  .contenedor_texto img{
     width: 100%;
     vertical-align: top;
-}
+} */
 
 main .tribus .contenedor_tribus{
     background-image: url(../img/storm_bg.png);    
@@ -229,19 +172,19 @@ footer .newsletter .centrado .contenedor_texto{
     margin-bottom: 0px;
 }
 
-footer .newsletter .centrado .encabezado .titulo{
+/* footer .newsletter .centrado .encabezado .titulo{
     color: #174277;
     font-family: quicksand;    
     font-weight: 700;
     text-align: center;
     font-size: 26px;
     margin:0 0 5px;
-}
+} */
 
-footer .newsletter .centrado .contenedor_texto .encabezado img{
+/* footer .newsletter .centrado .contenedor_texto .encabezado img{
     width: 100%;
     vertical-align: top;
-}
+} */
 
 footer .newsletter .centrado .contenedor_texto .texto{
     font-family: Raleway;
