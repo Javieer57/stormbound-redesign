@@ -1,0 +1,347 @@
+*{
+    box-sizing: border-box;
+}
+
+.centrado{
+    margin: auto;
+    max-width: 1000px;
+    overflow: hidden;
+    width: 90%;
+}
+
+/* Header */
+
+header .encabezado{
+    background-image: url(../img/storm_bg.png);
+    position: relative;
+}
+
+header .encabezado .espacio{
+    width: 100%;
+    padding-bottom: 60px;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+}
+
+header .encabezado .centrado{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header .encabezado .centrado div img{
+    width: 100%;
+    vertical-align: top;
+}
+
+header .encabezado .centrado .logo{
+    margin:40px 0 100px;
+    max-width: 40%;
+}
+
+header .encabezado .centrado .personaje{
+    align-self: end;
+    z-index: 1;
+    max-width: 30%;
+}
+
+/* Sección Mazo */
+main{
+    margin: 40px 0;
+}
+
+main .mazos{
+    margin-bottom: 40px;
+}
+
+main .mazos .centrado{
+    display: flex;
+    justify-content: space-between;
+}
+
+main .mazos .centrado .contenedor_texto{
+    width: 48%;
+}
+
+main .mazos .centrado .contenedor_imagen{
+    width: 48%;
+}
+
+main .mazos .centrado .contenedor_texto .encabezado .titulo{
+    color: #174277;
+    font-family: quicksand;    
+    font-weight: 700;
+    text-align: center;
+    font-size: 26px;
+    margin:0 0 5px;
+}
+
+main .mazos .centrado .contenedor_texto .encabezado img, 
+main .mazos .centrado .contenedor_imagen img{
+    width: 100%;
+    vertical-align: top;
+}
+
+main .mazos .centrado .contenedor_texto .texto{
+    font-family: Raleway;
+    font-size: 16px;
+    line-height: 30px;
+    font: 400;
+    /* padding: 0 10px; */
+    color:#818181
+}
+
+/* Trailer */
+
+/* main .trailer .centrado .contenedor_texto{
+    width: 80%;
+    margin: auto;
+} */
+
+main .trailer .centrado .contenedor_texto{
+    width: 80%;
+    margin: 0 auto 20px;
+}
+
+main .trailer .centrado .contenedor_texto .encabezado .titulo{
+    color: #174277;
+    font-family: quicksand;    
+    font-weight: 700;
+    text-align: center;
+    font-size: 26px;
+    margin:0 0 5px;
+}
+
+main .trailer .centrado .contenedor_texto .encabezado img{
+    width: 100%;
+    vertical-align: top;
+}
+
+main .centrado .aplicacion .contenedor_video{
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+main .centrado .aplicacion .video iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+main .centrado .aplicacion .plataformas{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .centrado .aplicacion .plataformas a{
+    display: inline-block;
+    width: 24%;
+}
+
+main .centrado .aplicacion .plataformas a img{
+    vertical-align: top;
+    width: 100%;
+}
+
+main .trailer .aplicacion .video{
+    position: relative;
+    padding-top: 56.25%;
+}
+
+/* tribus */
+
+main .trailer {
+    margin-bottom: 60px;
+}
+
+main .tribus .centrado .contenedor_texto{
+    width: 80%;
+    margin: 0 auto 20px;
+}
+
+main .tribus .centrado .encabezado .contenedor_texto  .titulo{
+    color: #174277;
+    font-family: quicksand;    
+    font-weight: 700;
+    text-align: center;
+    font-size: 26px;
+    margin:0 0 5px;
+}
+
+main .tribus .centrado .encabezado  .contenedor_texto img{
+    width: 100%;
+    vertical-align: top;
+}
+
+main .tribus .contenedor_tribus{
+    background-image: url(../img/storm_bg.png);    
+}
+
+main .tribus .contenedor_tribus .centrado{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: visible;
+}
+
+main .tribus .contenedor_tribus .tribu{
+    padding: 10px 20px;
+    width:29%;
+    background-color: cadetblue;
+    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+    margin:0 -31px;
+    position: relative;
+}
+
+main .tribus .contenedor_tribus .tribu:nth-child(1){background-color: #405477;}
+main .tribus .contenedor_tribus .tribu:nth-child(2){background-color: #824648;}
+main .tribus .contenedor_tribus .tribu:nth-child(3){background-color: #30655D;}
+main .tribus .contenedor_tribus .tribu:nth-child(4){background-color: #604830;}
+
+main .tribus .contenedor_tribus h4{
+    color: #f2f2f2;
+    font-family: quicksand;    
+    font-weight: 700;
+    text-align: center;
+    font-size: 24px;
+    margin: 0 0 10px;
+    /* background-color: cadetblue; */
+}
+
+main .tribus .contenedor_tribus img{
+    /* background-color: cadetblue; */
+    width: 100%;   
+    vertical-align: top;
+    max-width: 250px;
+}
+
+/* Newsletter */
+footer .newsletter{
+    margin-bottom: 60px;
+}
+
+footer .newsletter .centrado .contenedor_texto{
+    margin-bottom: 0px;
+}
+
+footer .newsletter .centrado .encabezado .titulo{
+    color: #174277;
+    font-family: quicksand;    
+    font-weight: 700;
+    text-align: center;
+    font-size: 26px;
+    margin:0 0 5px;
+}
+
+footer .newsletter .centrado .contenedor_texto .encabezado img{
+    width: 100%;
+    vertical-align: top;
+}
+
+footer .newsletter .centrado .contenedor_texto .texto{
+    font-family: Raleway;
+    font-size: 16px;
+    line-height: 30px;
+    font: 400;
+    /* padding: 0 10px; */
+    color:#818181;
+    text-align: center;
+}
+
+footer .newsletter .centrado .form{
+    display: flex;
+    justify-content: center;
+}
+
+footer .newsletter .centrado .form input{
+    border:1px solid grey;
+    border-radius: 5px;
+    width: 40%;
+    font-family: raleway;
+}
+
+footer .newsletter .centrado .form input:focus{
+    border:1px solid grey;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.btn{
+    background-color: #32021f;
+    border:none;
+    color: #f2f2f2;
+    display: block;
+    margin: 0 10px;
+    padding:10px 20px;
+    text-decoration: none;
+    font-family: raleway;
+}
+
+.btn:hover{
+    opacity: .8;
+}
+
+.border-radius{
+    border-radius: 5px;
+}
+
+.blue{
+    background-color: #246eb9;
+}
+
+/* datos */
+
+.datos{
+    background-color: #333;
+}
+
+.datos .centrado{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 40px;
+}
+
+.datos .centrado .columna{
+    width: 20%;
+    color: #f2f2f2;
+    padding: 0 10px;
+    font-family: raleway;    
+}
+
+.datos .centrado .columna h4{
+    font-family: quicksand;
+    margin-top: 0;
+}
+
+.datos .centrado .columna p{
+    line-height: 20px;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.datos .centrado .map{
+    width: 30%;
+    display: flex;
+}
+
+.map iframe{
+    width: 100%;
+}
+
+.seccion_list{
+    color:white;
+    font-size: 35px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.seccion_list li{
+    display: inline-block;
+    margin-right: 10px;
+}

@@ -1,286 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
     <script src="https://kit.fontawesome.com/b29855a26a.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="columnas.css">
-    <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Stormbound</title>
 </head>
 <body>
-    <!-- Encabezado -->
-    <header class="containet_fluid dark">
-        <div class="row pero">
-            <div class="col-1"></div>
-            <div class="col-4 header header__personaje">
-                <img src="personajes/personaje_header.png" alt="">
-            </div>
-            <div class="col-1"></div>
-            <div class="col-5 header">
-                <img src="img/storm_logo.png" alt="">
-                <div class="Column Column--desktop" style="align-items: center;"><button type="button" data-testid="news-recent-btn" disabled="" class="CTA"><span class="CTA__content" id="myBtn">Ver Trailer</span></button></div>
-            </div>
-
-            <div id="myModal" class="modal">
-
-                <!-- Modal content -->
-                <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <div class=" ratio_padre--9-16">
-                  <iframe  src="https://www.youtube.com/embed/IbMIUmd3A-M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="ratio_hijo"></iframe>
+    <header>
+        <section class="encabezado">
+            <div class="espacio"></div>
+            <div class="centrado">
+                <div class="personaje">
+                    <img src="img/personaje_header.png" alt="Enjambre del este">
                 </div>
+                <div class="logo">
+                    <img src="img/storm_logo.png" alt="Logo Stormbound">
                 </div>
-              
-              </div>
-        </div>
+            </div>
+        </section>
     </header>
 
-    <!--Aplicación-->
-    <section class="container_fluid">
-        <div class="row">
-            <div class="col-8 center">
-                <h2 class="texto__titulo--2" style="margin-top: 40px;">JUEGA GRATIS AHORA</h2>
-                <img src="img/ill_separador.png" alt="" class="separador">
-            </div>            
-        </div>
-        
-        <div class="row">
-            <div class="seccion_flex">
-                <div class="col-3">
-                    <img class="seccion__img br" src="img/app.png" alt="">
-                </div>
-    
-                <div class="col-6 seccion_flex">
-                    <img src="img/plataforma_appstore.png" alt="" class="plat__img">
-                    <img src="img/plataforma_playstore.png" alt="" class="plat__img">
-                    <img src="img/plataforma_kon.png" alt="" class="plat__img">
-                    <img src="img/plataforma_steam.png" alt="" class="plat__img">
-            </div>
-            </div>
-        </div>
-    </section>
+    <main>
+        <section class="mazos">
+            <div class="centrado">
+                <div class="contenedor_texto">
+                    <div class="encabezado">
+                        <h2 class="titulo">CONSTRUYE EL MAZO DEFINITIVO</h2>
+                        <img src="img/DividerStormbound.png" alt="" class="separador">
+                    </div>
 
-    <!--Mazo-->
-    <section class="container_fluid">
-        <div class="row">
-            <div class="col-6 texto">
-                <h2 class="texto__titulo--2">CONSTRUYE EL MAZO DEFINITIVO</h2>
-                <img src="img/ill_separador.png" alt="" class="separador">
-            </div>
-
-            <div class="col-12">
-                <div class="col-6">    
-                    <p class="texto__parrafo">
-                        Construye una baraja de cartas poderosas y enfrenta tus estrategias contra otros jugadores.
-                    </p>
-                    <p class="texto__parrafo">
-                        El juego posicional combina tus aspectos favoritos de los juegos de cartas coleccionables con las
-                        tácticas y la
-                        estrategia de los juegos de mesa.
-                    </p>
-                    <p class="texto__parrafo">
-                        Cuando juegas cartas de tu mano al tablero, tus unidades cobran vida. Una vez que se dan sus
-                        órdenes, se establece su curso y sus tropas son imparables. Adelante a la victoria
-                    </p>
-                </div>
-                <div class="col-6">    
-                    <img src="img/ill_cartas.png" alt="" class="seccion__img">
-                </div>    
-            </div>
-        </div>
-    </section>
-
-    <!--Noticias-->
-    <section class="container_fluid dark">
-        <div class="row">
-            <div class="col-12">
-                <div class="col-6">
-                    <h2 class="texto__titulo--2 tdark">ÚLTIMAS NOTICIAS</h2>
-                    <p class="texto__parrafo tdark">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem itaque ex modi minima explicabo tempore cumque, asperiores quibusdam rerum cupiditate. Debitis dolore velit harum molestiae!
-                    </p>
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nesciunt quas voluptatum repellat laudantium labore, ab et dignissimos nostrum tempora suscipit voluptates, est vero sunt ipsam aliquid beatae earum in.</p>
                 </div>
 
-                <article class="col-3 noticia">
-                    <div class="ratio_padre--1-1">
-                        <div class="noticia__img1 ratio_hijo">
-                            <div class="noticia__descripcion">
-                                <h3 class="noticia__titulo tdark">Actualización 2.0</h3>
-                            </div>
-                        </div>    
-                    </div>                
-                </article>
-    
-                <article class="col-3 noticia">
-                    <div class="ratio_padre--1-1">
-                        <div class="noticia__img2 ratio_hijo">
-                            <div class="noticia__descripcion">
-                                <h3 class="noticia__titulo tdark">Felinos se unen a la batalla</h3>
-                            </div>
-                        </div>    
-                    </div>                
-                </article>
+                <div class="contenedor_imagen">
+                    <img src="img/ill_cartas.png" alt="">
+                </div>
+            </div>
+        </section>
 
-            </div>
-        </div>
-
-    </section>
-
-    <!--Bando-->
-    <section class="container_fluid">
-        <div class="row">
-            <div class="col-8 texto center">
-                <h2 class="texto__titulo--2">ELIGE UN BANDO</h2>
-                <img src="img/ill_separador.png" alt="" class="separador">
-                <p class="texto__parrafo">Hace siglos, una poderosa tormenta destrozó el imperio, rompió las tierras y trajo magia al mundo. De la destrucción surgieron islas rocosas, flotando en los vientos, y nuevos reinos emergieron de las cenizas.</p>
-            </div>
-        </div>
-    </section>
-        
-    <section class="dark">
-        <div class="row tribus">
-            <div class="tribu bghielo">
-                <h3 class="texto__titulo--3 tdark">Pacto de <br> Hielo</h3>
-                <img src="personajes/personaje_hielo.png" alt="">
-            </div>
-            <div class="tribu bgmetal">
-                <h3 class="texto__titulo--3 tdark">Unión de <br> Metal</h3>
-                <img src="personajes/personaje_metal.png" alt="">
-            </div>
-            <div class="tribu bgsombras">
-                <h3 class="texto__titulo--3 tdark">Tribus de las Sombras</h3>
-                <img src="personajes/personaje_sombras.png" alt="">
-            </div>
-            <div class="tribu bgenjambre">
-                <h3 class="texto__titulo--3 tdark">Enjambre del <br> Este</h3>
-                <img src="personajes/personaje_enjambre.png" alt="">
-            </div>
-        </div>
-    </section>
-
-    <!--Newsletter-->
-    <section class="container_fluid">
-        <div class="row">
-            <div class="col-6">
-                <h2 class="texto__titulo--2">NEWSLETTER</h2>
-                <img src="img/ill_separador.png" alt="" class="separador">
-            </div>
-            <div class="col-12">
-                <div class="col-6">
-                    <p class="texto__parrafo">
-                        Recibe ofertas, contenido exclusivo y nuestras últimas noticias directamente en tu correo electrónico.
-                    </p>
+        <section class="trailer">
+            <div class="centrado">
+                <div class="contenedor_texto">
+                    <div class="encabezado">
+                        <h2 class="titulo">JUEGA GRATIS</h2>
+                        <img src="img/DividerStormbound.png" alt="" class="separador">
+                    </div>
                 </div>
 
-                <div class="col-6">
-                        <div class="row">
-                            <div class="col-11">
-                                <input type="mail" name="" id="" class="form__campo" placeholder="Correo electrónico">
-                            </div>
+                <div class="aplicacion">
+                    <div class="contenedor_video">
+                        <div class="video">
+                            <iframe src="https://www.youtube.com/embed/IbMIUmd3A-M" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
                         </div>
+                    </div>
+                    <div class="plataformas">
+                        <a href="#"><img src="img/app_store.png" alt=""></a>
+                        <a href="#"><img src="img/google_play.png" alt=""></a>
+                        <a href="#"><img src="img/steam-logo.png" alt=""></a>
+                        <a href="#"><img src="img/kongregate.png" alt=""></a>
+                    </div>
+                </div>
 
-                        <div class="row">
-                            <div class="col-6">
-                                <input type="text" name="" id="" class="form__campo" placeholder="Nombre">
-                                
-                            </div>
-                            <div class="col-5">
-                                <select name="" id="" class="form__campo">
-                                    <option value="">País</option>
-                                    <option value="">México</option>
-                                    <option value="">Estados Unidos</option>
-                                    <option value="">Canadá</option>
-                                </select>                                
-                            </div>
-                        </div>
+            </div>
+        </section>
 
-                        <div class="row">
-                            <div class="col-6">
-                                <input type="checkbox" name="" id="">
-                                <p class="texto__parrafo small">Acepto los términos y condiciones</p>
-                            </div>
-                            <div class="col-5">
-                                <a href="#" role="button" class="form__btn">Enviar</a>                       
-                            </div>
-                        </div>
+        <section class="tribus">
+            <div class="centrado">
+                <div class="encabezado">
+                    <div class="contenedor_texto">
+                        <h2 class="titulo">ELIGE UN BANDO</h2>
+                        <img src="img/DividerStormbound.png" alt="" class="separador">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!--Footer-->
-    <section class="container_fluid fdark">
-        <div class="row">
-            <div class="col-3">
-                <h4 class="texto__titulo--4 tdark t-left">Contáctanos</h4>
-                <p class="texto__parrafo tdark">
-                    Paladin Studios
-                    <br>
-                    Saturnusstraat 60, unit 76
-                    2516 AH Den Haag
-                </p>
-                <p class="texto__parrafo tdark">
-                    +31 71 513 2222
-                    info@paladinstudios.com
-                </p>
+            <div class="contenedor_tribus">
+                <div class="centrado">
+                    <div class="tribu">
+                        <h4>Pacto de <br> Invierno</h4>
+                        <img src="img/personaje_hielo.png" alt="">
+                    </div>
+                    <div class="tribu">
+                        <h4>Unión de <br> Metal</h4>
+                        <img src="img/personaje_metal.png" alt="">
+                    </div>
+                    <div class="tribu">
+                        <h4>Tribu de <br> las Sombras</h4>                        
+                        <img src="img/personaje_sombras.png" alt="">
+                    </div>
+                    <div class="tribu">
+                        <h4>Enjambre <br> del Este</h4>
+                        <img src="img/personaje_enjambre.png" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="col-3">
-                <h4 class="texto__titulo--4 tdark t-left">Trabajo con nosotros</h4>
-                <p class="texto__parrafo tdark">
-                    ¿Te interesa trabajar con nosotros? <span class="texto__enlace">Envíanos un correo</span> y nos contactaremos contigo.
-                </p>
-                <p class="texto__parrafo tdark">
-                    Queremos saber de ti.
-                </p>
+        </section>
+    </main>
+
+    <footer>
+        <section class="newsletter">
+            <div class="centrado">
+                <div class="contenedor_texto">
+                    <div class="encabezado">
+                        <h2 class="titulo">NEWSLETTER</h2>
+                        <img src="img/DividerStormbound.png" alt="" class="separador">
+                        <p class="texto">Suscribete y recibe las últimas noticias directamente en tu correo</p>
+                    </div>
+                </div>
+
+                <form action="" class="form">
+                    <input type="text" name="" id="">
+                    <button class="btn blue border-radius">Suscribirse</button>
+                </form>
             </div>
-            <div class="col-3">
-                <h4 class="texto__titulo--4 tdark t-left">Síguenos en Redes</h4>
-                <ul class="seccion_list">
-                    <li class="seccion_list_item">
-                        <i class="fab fa-facebook-square"></i>
-                    </li>
-                    <li class="seccion_list_item">
-                        <i class="fab fa-twitter-square"></i>
-                    </li>
-                    <li class="seccion_list_item">
-                        <i class="fab fa-youtube-square"></i>
-                    </li>
-                </ul>
+        </section>
+
+        <section class="datos fdark">
+            <div class="centrado">
+                <div class="columna">
+                    <h4 class="">Contáctanos</h4>
+                        <p class="">
+                            Paladin Studios
+                            <br>
+                            Saturnusstraat 60, unit 76
+                            2516 AH Den Haag
+                        </p>
+                        <p class="">
+                            +31 71 513 2222
+                            info@paladinstudios.com
+                        </p>
+                </div>
+                <div class="columna">
+                    <h4 class="">Trabajo con nosotros</h4>
+                        <p class="">
+                            ¿Te interesa trabajar con nosotros? <span class="texto__enlace">Envíanos un correo</span> y nos contactaremos contigo.
+                        </p>
+                        <p class="">
+                            Queremos saber de ti.
+                        </p>
+                </div>
+                <div class="columna">
+                    <h4 class="">Síguenos en Redes</h4>
+                    <ul class="seccion_list">
+                        <li class="">
+                            <i class="fab fa-facebook-square"></i>
+                        </li>
+                        <li class="">
+                            <i class="fab fa-twitter-square"></i>
+                        </li>
+                        <li class="">
+                            <i class="fab fa-youtube-square"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="columna map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2452.7897446929937!2d4.343353315389844!3d52.06535197973065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b6550e841e13%3A0x47d4617f0a36c01b!2sPaladin%20Studios!5e0!3m2!1ses-419!2smx!4v1604289189585!5m2!1ses-419!2smx" style="border:0;"></iframe>
+                </div>
             </div>
-
-            <img src="img/ill_nube.png" alt="" class="fimg">
-        </div>
-    </section>
-
-    <script>
-        // Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-} 
-    </script>
+        </section>
+    </footer>
 </body>
 </html>
