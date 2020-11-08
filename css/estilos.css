@@ -1,27 +1,21 @@
-
-
 /* Header */
-header .encabezado{
+header .encabezado,
+main .tribus .contenedor_tribus{
     background-image: url(../img/storm_bg.png);
     position: relative;
 }
 
 header .encabezado .espacio{
-    width: 100%;
+    background-color: white;
+    bottom: 0;
     padding-bottom: 60px;
     position: absolute;
-    bottom: 0;
-    background-color: white;
+    width: 100%;
 }
 
 header .encabezado .centrado{
     display: flex;
     justify-content: space-evenly;
-}
-
-header .encabezado .centrado div img{
-    width: 100%;
-    vertical-align: top;
 }
 
 header .encabezado .centrado .logo{
@@ -31,114 +25,56 @@ header .encabezado .centrado .logo{
 
 header .encabezado .centrado .personaje{
     align-self: end;
-    z-index: 1;
     max-width: 30%;
-}
-
-main{
-    margin: 40px 0;
-}
-
-main section{
-    margin-bottom: 40px;
+    z-index: 1;
 }
 
 /* Sección Mazo */
 main .mazos .centrado{
     display: flex;
     justify-content: space-between;
-    vertical-align: center;
 }
 
 main .mazos .centrado > *{
     width: 48%;
 }
 
-main .mazos .centrado .contenedor_imagen{
-    vertical-align: center;
-}
-
 /* Trailer */
 main .centrado .aplicacion .contenedor_video{
-    margin: auto;
-    margin-bottom: 20px;
-}
-
-main .centrado .aplicacion .video iframe{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top:0;
-    left:0;
-}
-
-main .centrado .aplicacion .plataformas{
-    display: flex;
-    width: 80%;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-}
-
-main .centrado .aplicacion .plataformas a{
-    display: inline-block;
-    width: 24%;
-}
-
-main .centrado .aplicacion .plataformas a img{
-    vertical-align: top;
-    width: 100%;
-}
-
-main .trailer .aplicacion .video{
-    position: relative;
-    padding-top: 56.25%;
-}
-
-/* tribus */
-
-main .trailer {
-    margin-bottom: 60px;
-}
-
-main .tribus .centrado .contenedor_texto,
-main .newsletter .centrado .contenedor_texto{
-    width: 80%;
     margin: 0 auto 20px;
 }
 
-/* main .tribus .centrado .encabezado .contenedor_texto  .titulo{
-    color: #174277;
-    font-family: quicksand;    
-    font-weight: 700;
-    text-align: center;
-    font-size: 26px;
-    margin:0 0 5px;
-} */
+main .trailer .aplicacion .video{
+    padding-top: 56.25%;
+    position: relative;
+}
 
-/* main .tribus .centrado .encabezado  .contenedor_texto img{
+main .centrado .aplicacion .video iframe{
+    height: 100%;
+    left:0;
+    position: absolute;
+    top:0;
     width: 100%;
-    vertical-align: top;
-} */
-
-main .tribus .contenedor_tribus{
-    background-image: url(../img/storm_bg.png);    
 }
 
-main .tribus .contenedor_tribus .centrado{
+main .centrado .aplicacion .plataformas{
+    align-items: center;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow: visible;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
 }
 
+main .centrado .aplicacion .plataformas a{
+    width: 24%;
+}
+
+/* tribus */
 main .tribus .contenedor_tribus .tribu{
-    padding: 10px 20px;
-    width:29%;
-    background-color: cadetblue;
     clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
     margin:0 -31px;
-    position: relative;
+    padding: 10px 20px;
+    width:29%;
 }
 
 main .tribus .contenedor_tribus .tribu:nth-child(1){background-color: #405477;}
@@ -146,142 +82,70 @@ main .tribus .contenedor_tribus .tribu:nth-child(2){background-color: #824648;}
 main .tribus .contenedor_tribus .tribu:nth-child(3){background-color: #30655D;}
 main .tribus .contenedor_tribus .tribu:nth-child(4){background-color: #604830;}
 
-main .tribus .contenedor_tribus h4{
-    color: #f2f2f2;
-    font-family: quicksand;    
-    font-weight: 700;
-    text-align: center;
-    font-size: 24px;
-    margin: 0 0 10px;
-    /* background-color: cadetblue; */
-}
-
 main .tribus .contenedor_tribus img{
-    /* background-color: cadetblue; */
-    width: 100%;   
-    vertical-align: top;
     max-width: 250px;
-}
-
-/* Newsletter */
-footer .newsletter{
-    margin-bottom: 60px;
-}
-
-footer .newsletter .centrado .contenedor_texto{
-    margin-bottom: 0px;
-}
-
-/* footer .newsletter .centrado .encabezado .titulo{
-    color: #174277;
-    font-family: quicksand;    
-    font-weight: 700;
-    text-align: center;
-    font-size: 26px;
-    margin:0 0 5px;
-} */
-
-/* footer .newsletter .centrado .contenedor_texto .encabezado img{
-    width: 100%;
     vertical-align: top;
-} */
+}
 
 footer .newsletter .centrado .contenedor_texto .texto{
-    font-family: Raleway;
-    font-size: 16px;
-    line-height: 30px;
-    font: 400;
-    /* padding: 0 10px; */
-    color:#818181;
     text-align: center;
-}
-
-footer .newsletter .centrado .form{
-    display: flex;
-    justify-content: center;
 }
 
 footer .newsletter .centrado .form input{
+    border-radius: 5px 0 0 5px;
     border:1px solid grey;
-    border-radius: 5px;
+    padding: 10px;
     width: 40%;
-    font-family: raleway;
-}
-
-footer .newsletter .centrado .form input:focus{
-    border:1px solid grey;
-    border-radius: 5px;
-    box-shadow: none;
 }
 
 .btn{
-    background-color: #32021f;
     border:none;
+    background-color: #246eb9;
+    border-radius: 0 5px 5px 0;
     color: #f2f2f2;
+    cursor: pointer;
     display: block;
-    margin: 0 10px;
     padding:10px 20px;
     text-decoration: none;
-    font-family: raleway;
 }
 
-.btn:hover{
-    opacity: .8;
+.btn:hover{    
+    opacity: .9;
 }
 
-.border-radius{
-    border-radius: 5px;
-}
-
-.blue{
-    background-color: #246eb9;
-}
-
-/* datos */
-
+/* Datos */
 .datos{
     background-color: #333;
 }
 
 .datos .centrado{
     display: flex;
-    justify-content: center;
-    padding: 20px 0 40px;
+    justify-content: space-between;
 }
 
 .datos .centrado .columna{
-    width: 20%;
     color: #f2f2f2;
-    padding: 0 10px;
-    font-family: raleway;    
-}
-
-.datos .centrado .columna h4{
-    font-family: quicksand;
-    margin-top: 0;
-}
-
-.datos .centrado .columna p{
-    line-height: 20px;
-    margin-bottom: 0;
-    font-size: 14px;
+    display: inline-block;
+    margin: 20px 0 40px;
+    width: 20%;
 }
 
 .datos .centrado .map{
-    width: 30%;
     display: flex;
+    width: 30%;
 }
 
-.map iframe{
-    width: 100%;
+.datos .centrado .columna p{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
 }
 
 .seccion_list{
-    color:white;
     font-size: 35px;
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 .seccion_list li{
