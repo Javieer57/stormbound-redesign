@@ -1,0 +1,58 @@
+@media screen and (max-width:850px){
+    main .mazos .centrado{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main .mazos .centrado > *{
+        width: 100%;
+    }
+
+    main .mazos .centrado .contenedor_imagen{
+        max-width: 480px;
+        width: 100%;
+    }
+
+    main .tribus .contenedor_tribus .tribu{
+        clip-path: none;
+        margin: 0;
+        padding: 10px 20px;
+        width:50%;        
+        position: relative;
+    }
+
+    main .tribus .contenedor_tribus h4{
+        color: #f2f2f2;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 10px 0 35%;
+        text-align: left;
+    }
+
+    main .tribus .contenedor_tribus img{
+        max-width: 50%;
+        vertical-align: top;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+}
+
+@media screen and (max-width:900px){
+    header .encabezado .espacio{
+        display: none;
+    }
+
+    header .encabezado .centrado .personaje{
+        display: none;
+    }
+
+    header .encabezado .centrado .logo{
+        margin:20px;
+        width: 400px;
+        max-width: 80%;
+    }
+}

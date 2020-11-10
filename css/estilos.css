@@ -33,6 +33,7 @@ header .encabezado .centrado .personaje{
 main .mazos .centrado{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 main .mazos .centrado > *{
@@ -60,21 +61,29 @@ main .centrado .aplicacion .video iframe{
 main .centrado .aplicacion .plataformas{
     align-items: center;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: auto;
-    width: 80%;
+    max-width: 800px;
+    width: 100%;
 }
 
 main .centrado .aplicacion .plataformas a{
-    width: 24%;
+    margin: 20px 10px;
+    width: 180px;
 }
 
 /* tribus */
+main .tribus .contenedor_tribus .centrado{
+    overflow: visible;
+}
+
 main .tribus .contenedor_tribus .tribu{
-    clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
-    margin:0 -31px;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    margin:0 -20px;
     padding: 10px 20px;
     width:29%;
+    cursor: pointer;
 }
 
 main .tribus .contenedor_tribus .tribu:nth-child(1){background-color: #405477;}
@@ -86,6 +95,8 @@ main .tribus .contenedor_tribus img{
     max-width: 250px;
     vertical-align: top;
 }
+
+/* footer */
 
 footer .newsletter .centrado .contenedor_texto .texto{
     text-align: center;
@@ -114,25 +125,33 @@ footer .newsletter .centrado .form input{
 }
 
 /* Datos */
+main .centrado .aplicacion .plataformas a{
+    margin: 20px 10px;
+    width: 180px;
+}
 .datos{
     background-color: #333;
 }
 
 .datos .centrado{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .datos .centrado .columna{
     color: #f2f2f2;
-    display: inline-block;
-    margin: 20px 0 40px;
-    width: 20%;
+    margin: 20px 10px 40px;
+    width: 200px;
+    background-color: brown;
 }
 
 .datos .centrado .map{
     display: flex;
-    width: 30%;
+}
+
+.datos .centrado .map iframe{
+    width: 100%;
 }
 
 .datos .centrado .columna p{
