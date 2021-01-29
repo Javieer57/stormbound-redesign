@@ -1,3 +1,11 @@
+@media screen and (max-width:974px){
+    .datos .centrado .columna:last-child{
+        width: 100%;
+    }
+}
+
+
+
 @media screen and (max-width:850px){
     main .mazos .centrado{
         display: flex;
@@ -38,6 +46,40 @@
         position: absolute;
         right: 20px;
         top: 10px;
+    }
+}
+
+@media screen and (max-width:734px){
+    .datos .centrado .columna:last-child{
+        width: 200px;
+    }
+
+    main .tribus .contenedor_tribus .tribu{
+        clip-path: none;
+        margin: 0;
+        padding: 10px 20px;
+        width: 100%;        
+        position: relative;
+    }
+
+    main .tribus .contenedor_tribus h4{
+        color: #f2f2f2;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 34px;
+        font-weight: 700;
+        margin: 10px;
+        text-align: left;
+        float: left;
+    }
+
+    main .tribus .contenedor_tribus img{
+        max-width: 50%;
+        vertical-align: top;
+        margin-left: auto;
+        position: relative;
+        right: 0;
+        float: right;
+        top: 0;
     }
 }
 
